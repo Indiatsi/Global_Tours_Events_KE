@@ -1,10 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
 <head>
+    <title>Global Tours and Events KE</title>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-$END$
+<div class="topnav">
+    <a class="active" href="home.html">HOME</a>
+    <a href="localSafaris.html">LOCAL SAFARIS</a>
+    <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
+    <a href="seasonalHolidays.html" id="seasonal">SEASONAL HOLIDAYS</a>
+    <a href="contactUs.html" id="contact">CONTACT US</a>
+    <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
+    <a href="login.html" id="login">LOGIN</a>
+</div>
+
+<div class="registrationBox">
+    <img class="avatar" src="avatar.png" alt="Avatar"/>
+    <!--I need a target and probably a method on click()-->
+
+    <form id="registrationForm">
+
+        <p class="heading">Registration</p>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+        <br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter a password" required>
+        <br>
+
+        <label for="confpassword">Confirm Password</label>
+        <input type="password" name="confpassword" id="confpassword" placeholder="Retype the password" required>
+        <br>
+
+        <input type="submit" name="submitBtn" id="submitBtn" value="Register"/>
+
+    </form>
+
+    <p id="link">
+
+        <a href="forgotpassword.html" class="linksBelow">Forgot your password?</a>
+        <br><br>
+        <a href="login.html" class="linksBelow">Already have an account? <span style="color: black">Sign In</span> </a>
+    </p>
+
+</div>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="search-text">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="form">
+                <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                <form id="search-form" class="form-search form-horizontal">
+                    <input type="text" class="input-search" placeholder="Email Address">
+                    <button type="submit" class="btn-search">SUBMIT</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="menu">
+                    <span>Menu</span>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Gallery </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="address">
+                    <span>Contact</span>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
 </body>
 </html>
+
