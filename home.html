@@ -5,78 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Tours and Events KE</title>
     <link type="text/css" href="css/home.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<div class="topnav">
-    <a class="active" href="home.html">HOME</a>
-    <a href="localSafaris.html">LOCAL SAFARIS</a>
-    <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
-    <a href="seasonalHolidays.html" id="seasonal">SEASONAL HOLIDAYS</a>
-    <a href="contactUs.html" id="contact">CONTACT US</a>
-    <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
-    <a href="login.html" id="login">LOGIN</a>
-</div>
+<header>
+    <div class="topnav">
+        <a class="active" href="home.html">HOME</a>
+        <a href="localSafaris.html">LOCAL SAFARIS</a>
+        <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
+        <a href="seasonalHolidays.html" id="seasonal">SEASONAL HOLIDAYS</a>
+        <a href="contactUs.html" id="contact">CONTACT US</a>
+        <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
+        <a href="login.html" id="login">LOGIN</a>
+    </div>
 
-<div class="search-container">
-    <form>
-        <input style="height: 20%" type="text" placeholder="Search.." name="search">
-        <button style="background-color: #009933" type="submit">Search</button>
-    </form>
-</div>
-<br>
-<br>
+    <div class="search-container">
+        <form role="search" method="get" action="">
+            <input style="width: 500px; height: 50px" type="text" placeholder="Where do you want to go..." name="search">
+            <button style="font-size:20px; background-color: #009933; width: 100px; height: 50px" type="submit">Search</button>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <hr>
+</header>
 
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
         <div class="numbertext">1 / 8</div>
-        <img src="img/rusinga.jpg" style="width:100%">
+        <img src="img/rusinga.jpg" style="height:600px; width:100%">
         <div class="text">Rusinga Island - Kenya</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 8</div>
-        <img src="img/saltlick.jpg" style="width:100%">
+        <img src="img/saltlick.jpg" style="height:600px; width: 100%">
         <div class="text">Tsavo Salt Lick Lodge - Kenya</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 8</div>
-        <img src="img/giraffemanor.jpg" style="width:100%">
+        <img src="img/giraffemanor.jpg" style="height:600px; width:100%">
         <div class="text">Giraffe Manor - Kenya</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 8</div>
-        <img src="img/porini.jpg" style="width: 100%">
+        <img src="img/porini.jpg" style="height:600px; width:100%">
         <div class="text">Porini Safari Camp - Kenya</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 8</div>
-        <img src="img/makanyane.jpg" style="width: 100%">
+        <img src="img/makanyane.jpg" style="height:600px; width:100%">
         <div class="text">Makanyane Safari Lodge - South Africa</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">6 / 8</div>
-        <img src="img/capelegrand.jpg" style="width: 100%">
+        <img src="img/capelegrand.jpg" style="height:600px; width:100%">
         <div class="text">Cape Le Grand Beach - Australia</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">7 / 8</div>
-        <img src="img/argentina.jpg" style="width: 100%">
+        <img src="img/argentina.jpg" style="height:600px; width:100%">
         <div class="text">Buenos Aires - Argentina</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">8 / 8</div>
-        <img src="img/myanmar.png" style="width: 100%">
+        <img src="img/myanmar.png" style="height:600px; width:100%">
         <div class="text">Secret Ancient City of Bagan - Myanmar</div>
     </div>
 
@@ -115,43 +121,49 @@
     }
 </script>
 
-<div class="row">
-    <h2>Top Holiday Packages</h2>
+<br>
+
+<div id="row" class="row">
+    <h3 style="margin-left: 10px">Top Holiday Packages</h3>
     <div class="column" style="background-color:white;">
         <img src="img/riftvalley.jpg" style="width: 95%">
         <h3>Rift Valley Deals</h3>
-        <p>Sirville Elementaita at <span style="color: #009933; font-size: 25px;">Kshs. 6,000</span></p>
+        <p>Sirville Elementaita at <span style="color: #009933; font-size: 20px;">Kshs. 6,000</span></p>
         <hr>
-        <p>Lake Naivasha Sopa Lodge at <span style="color: #009933; font-size: 25px;">Kshs. 9,900</span></p>
+        <p>Lake Naivasha Sopa Lodge at <span style="color: #009933; font-size: 20px;">Kshs. 9,900</span></p>
         <hr>
-        <p>Enashipai Resort Spa and Lodge at <span style="color: #009933; font-size: 25px;">Kshs. 13,250</span></p>
+        <p>Enashipai Resort Spa and Lodge at <span style="color: #009933; font-size: 20px;">Kshs. 13,250</span></p>
+        <hr>
         <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
     </div>
-    <div class="column" style="background-color:white;">
+    <div class="column" id="column-sgr" style="background-color:white;">
         <img src="img/sgr.jpg" width="100%">
         <h3>Mombasa SGR Train Deals</h3>
-        <p>Plaza Beach Hotel - 3 days at <span style="color: #009933; font-size: 25px;">Kshs. 13,000</span></p>
+        <p>Plaza Beach Hotel - 3 days at <span style="color: #009933; font-size: 20px;">Kshs. 13,000</span></p>
         <hr>
-        <p>Neptune Bamburi - 5 days at <span style="color: #009933; font-size: 25px;">Kshs. 30,600</span></p>
+        <p>Neptune Bamburi - 5 days at <span style="color: #009933; font-size: 20px;">Kshs. 30,600</span></p>
         <hr>
-        <p>Amani Tiwi - 3 days at <span style="color: #009933; font-size: 25px;">Kshs. 19,800</span></p>
+        <p>Amani Tiwi - 3 days at <span style="color: #009933; font-size: 20px;">Kshs. 19,800</span></p>
+        <hr>
         <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
     </div>
     <div class="column" style="background-color:white;">
         <img src="img/holiday.jpg" style="width: 100%">
         <h3>Early Holiday Deals</h3>
-        <p>3 Days Masai Mara Budget Package at <span style="color: #009933; font-size: 25px;">Kshs. 14,500</span></p>
+        <p style="font-size: 12px">3 Days Masai Mara Budget Package at <span style="color: #009933; font-size: 20px;">Kshs. 14,500</span></p>
         <hr>
-        <p>4 Days Neptune Beach Bamburi at <span style="color: #009933; font-size: 25px;">Kshs. 20,200</span></p>
+        <p style="font-size: 12px">4 Days Neptune Beach Bamburi at <span style="color: #009933; font-size: 20px;">Kshs. 20,200</span></p>
         <hr>
-        <p>4 Days Voi Wildlife & Bamburi Beach at <span style="color: #009933; font-size: 25px;">Kshs. 28,600</span></p>
+        <p style="font-size: 12px">4 Days Voi Wildlife & Bamburi Beach at <span style="color: #009933; font-size: 20px;">Kshs. 28,600</span></p>
+        <hr>
         <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
     </div>
 </div>
 <br>
 <br>
-<div class="row2">
-    <h2>Featured Packages</h2>
+
+<div class="row2" id="row2">
+    <h2 style="margin-left: 10px;">Featured Packages</h2>
     <div class="column2" style="background-color:white;">
         <img src="img/wildebeest.jpeg" style="width: 100%">
         <h3>Masai Mara Widebeest Migration Safari Packages</h3>
@@ -177,8 +189,10 @@
         <button style="background-color: #009933" type="button">BOOK NOW</button>
     </div>
 </div>
+<br>
+<br>
 
-<div class="row2">
+<div class="row2" id="row2">
     <h2>Out of Kenya Packages</h2>
     <div class="column2" style="background-color:white;">
         <img src="img/dubai.jpg" style="width: 100%">
@@ -199,21 +213,61 @@
         <button style="background-color: #009933" type="button">BOOK NOW</button>
     </div>
     <div class="column2" style="background-color:white;">
-        <img src="img/honeymoon.jp2" style="width: 100%">
+        <img src="img/honeymoon.jpg" style="width: 100%">
         <h3>11 Days Kenya Bush and Beach Honeymoon Package</h3>
         <p>Destinations: Samburu, Mt. Kenya Safari and Mombasa. From <span style="font-size: 18px; color: #009933">Kshs. 163,500</span> per person sharing</p>
         <button style="background-color: #009933" type="button">BOOK NOW</button>
     </div>
 </div>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+<br>
+<br>
+
+<hr>
+
+<!-- Footer 2 -->
+<footer style="margin-left: 10px; margin-right: 10px;">
+
+    <div class="search-text">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="form">
+                    <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                    <form id="search-form" class="form-search form-horizontal">
+                        <input type="text" class="input-search" placeholder="Email Address">
+                        <button type="submit" class="btn-search">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top2">
+        <div class="container">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+                <a href="https://twitter.com"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+                <a href="https://github.com"><i class="fa fa-github fa-2x"></i>Github</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+                <a href="https://plus.google.com/discover"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="border-top:1px solid grey;">
+        <div class="row text-center">
+            <div class="col-lg-6 col-lg-offset-3">
                 <ul class="menu">
-                    <span>Menu</span>
+
                     <li>
-                        <a href="#">Home</a>
+                        <a href="home.html">Home</a>
                     </li>
 
                     <li>
@@ -225,29 +279,30 @@
                     </li>
 
                     <li>
-                        <a href="#">Gallery </a>
+                        <a href="#">Gallery</a>
                     </li>
+
+                    <li>
+                        <a href="contactUs.html">Contact</a>
+                    </li>
+
                 </ul>
             </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <ul class="address">
-                    <span>Contact</span>
-                    <li>
-                        <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">Phone</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">Adress</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Email</a>
-                    </li>
-                </ul>
-            </div>
-
-
         </div>
     </div>
+
 </footer>
+
+
+<div class="copyright">
+    <div class="container">
+
+        <div class="row text-center">
+            <p>Copyright © 2018 All rights reserved</p>
+        </div>
+
+    </div>
+</div>
+<!-- Footer 2 End -->
 </body>
 </html>
