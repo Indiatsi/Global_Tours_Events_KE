@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Camping Safaris</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/camping-lodging.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-bar.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        var id;
+        var package;
+
+        $(document).ready(function(){
+
+            $("button").click(function(){
+                id=this.id;
+
+                switch(id){
+                    case '_11':
+                        package= $('#_11_text').text();
+                        break;
+                    case '_12':
+                        package=$('#_12_text').text();
+                        break;
+                    case '_13':
+                        package=$('#_13_text').text();
+                        break;
+                    case '_21':
+                        package=$('#_21_text').text();
+                        break;
+                    case '_22':
+                        package=$('#_22_text').text();
+                        break;
+                    case '_23':
+                        package=$('#_23_text').text();
+                        break;
+                }
+
+                alert("Package chosen = "+package);
+                $("#hidden").val(package);
+            });
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+
+<!-- Navigation Bar-->
+<ul class="dropdown">
+    <li><a href="home.html">HOME</a></li>
+    <li>
+        <a class="active" href="#">LOCAL SAFARIS</a>
+        <div class="dropdown-content">
+            <a href="camping-safaris.html">Camping Safaris</a>
+            <a href="lodging-safaris.html">Lodging Safaris</a>
+        </div>
+    </li>
+    <li>
+        <a href="#" id="international">INTERNATIONAL SAFARIS</a>
+        <div class="dropdown-content">
+            <a href="incredibleCruises.html">Incredible Cruises</a>
+            <a href="internationalSafaris.html">International Travels</a>
+        </div>
+    </li>
+    <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
+    <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+    <li><a href="login.html" id="login">LOGIN</a></li>
+</ul>
+
+<div class="search-container">
+    <form role="search" method="get" action="">
+        <input style="width: 500px; height: 50px" type="text" placeholder="Where do you want to go..." name="search">
+        <button style="font-size:20px; background-color: #009933; width: 100px; height: 50px" type="submit">Search</button>
+    </form>
+</div>
+
+
+<form action="php/login.php">
+
+    <div class="row">
+        <div class='pageTitle'><h2>Kenya Camping Safaris</h2></div>
+
+        <div class="column">
+            <img src="img/Maasai-Mara-Lion-Mom-Cubs-2.jpg" alt="">
+            <h3 id="_11_text">3 Day Maasai Camping Safari</h3>
+            <p>Kenya's most celebrated national reserve. It offers the possibility of seeing "the big five" and many other species of wildlife<span><br>From Kshs. 14,500 per person</span></p>
+            <button id="_11">BOOK NOW</button>
+        </div>
+
+
+        <div class="column">
+            <img src="img/Amboseli-National-Park-elephants.jpg" alt="sgr">
+            <h3 id="_12_text">3 Day Amboseli Camping Safari</h3>
+            <p>Amboseli National park is one of Kenya's most popular parks. Here, elephants, hippos and bird life can be seen against the backdrop of Mt. Kilimanjaro<span><br>From Kshs. 6,000 per person</span></p>
+            <button id="_12">BOOK NOW</button>
+        </div>
+
+
+        <div class="column" style="background-color:white;">
+            <img src="img/Giraffe-grazing-in-Samburu-National-Reserve.jpg" alt=''>
+            <h3 id="_13_text">3 Day Samburu Camping adventure</h3>
+            <p>Samburu National reserve is renowned for its rare unique animal species such as the gravy zebra and reticulated giraffe<span><br>From Kshs. 6,000 per person</span></p>
+            <button id="_13">BOOK NOW</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!-- Row 2 -->
+
+    <div class="row">
+        <div class="column">
+            <img src="img/Maasai-Mara-zebrasjpg.jpg" alt="">
+            <h3 id="_21_text">4 Days Maasai Mara & Lake Nakuru Safari Adventure</h3>
+            <p>Camping safari to the world famous bird sanctuary of Lake Nakuru, then to Kenya's greatest national reserve - the Maasai Mara<span><br>From Kshs. 6,000 per person</span></p>
+            <button id="_21">BOOK NOW</button>
+        </div>
+
+
+        <div class="column">
+            <img src="img/Maasai-Mara-Migration.jpg" alt=''>
+            <h3 id="_22_text">4 Day Maasai Mara Camping Migration Safari</h3>
+            <p>The safari takes you to the Maasai Mara national reserve; famous for its big cat population and annual wildebeest migration from July to October<span><br>From Kshs. 12,000 per person</span></p>
+            <button id="_22">BOOK NOW</button>
+        </div>
+        <div class="column">
+            <img src="img/tsavo-east-elephants.jpg" alt=''>
+            <h3 id="_23_text">6 Days Amboseli, Tsavo East & Tsavo West & Mombasa Camping Safari</h3>
+            <p>6 Days budget package to Amboseli, both Tsavo East & West and ending in Mombasa<span><br>From Kshs. 16,000 per person</span></p>
+            <button id="_23">BOOK NOW</button>
+        </div>
+    </div>
+
+</form>
+
+<footer style="margin-left: 10px; margin-right: 10px;">
+
+    <div class="search-text">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="form" style="margin-left: 450px">
+                    <h4>SIGN UP TO OUR NEWSLETTER</h4>
+                    <form id="search-form" class="form-search form-horizontal">
+                        <input type="text" class="input-search" placeholder="Email Address">
+                        <button type="submit" class="btn-search">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="border-top:1px solid grey;">
+        <div class="row text-center">
+            <div  style="margin-left: 450px" class="col-lg-6 col-lg-offset-3">
+                <ul class="menu">
+
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="contactUs.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+    <div class="container">
+
+        <div class="row text-center">
+            <p>Copyright © 2018 All rights reserved</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

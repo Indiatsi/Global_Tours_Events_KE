@@ -8,19 +8,29 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/navigation-bar.css" rel="stylesheet" type="text/css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
 <header>
-    <div class="topnav">
-        <a class="active" href="home.html">HOME</a>
-        <a href="localSafaris.html">LOCAL SAFARIS</a>
-        <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
-        <a href="seasonalHolidays.html" id="seasonal">SEASONAL HOLIDAYS</a>
-        <a href="contactUs.html" id="contact">CONTACT US</a>
-        <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
-        <a href="login.html" id="login">LOGIN</a>
+    <!-- Navigation Bar-->
+    <div>
+        <ul class="dropdown">
+            <li><a class="active" href="home.html">HOME</a></li>
+            <li>
+                <a href="#">LOCAL SAFARIS</a>
+                <div class="dropdown-content">
+                    <a href="camping-safaris.html">Camping Safaris</a>
+                    <a href="lodging-safaris.html">Lodging Safaris</a>
+                </div>
+            </li>
+            <li><a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a></li>
+            <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
+            <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+            <li><a href="login.html" id="login">LOGIN</a></li>
+        </ul>
     </div>
 
     <div class="search-container">
@@ -31,7 +41,6 @@
     </div>
     <br>
     <br>
-
     <hr>
 </header>
 
@@ -117,15 +126,15 @@
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
         slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
+        setTimeout(showSlides, 2000); // Change image every 5 seconds
     }
 </script>
 
 <br>
 
-<div id="row" class="row">
+<div id="row" class="row" style="height: 600px">
     <h3 style="margin-left: 10px">Top Holiday Packages</h3>
-    <div class="column" style="background-color:white;">
+    <div class="column" style="background-color:white; height: 530px">
         <img src="img/riftvalley.jpg" style="width: 95%">
         <h3>Rift Valley Deals</h3>
         <p>Sirville Elementaita at <span style="color: #009933; font-size: 20px;">Kshs. 6,000</span></p>
@@ -162,55 +171,55 @@
 <br>
 <br>
 
-<div class="row2" id="row2">
+<div class="row2">
     <h2 style="margin-left: 10px;">Featured Packages</h2>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white; height: 415px;">
         <img src="img/wildebeest.jpeg" style="width: 100%">
         <h3>Masai Mara Widebeest Migration Safari Packages</h3>
         <p>Wildebeest migration adventure in Masai Mara, Kenya. 3 Days from <span style="color: #009933; font-size: 18px;">Kshs. 14,500</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 55px" type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white; height: 415px">
         <img src="img/rusinga-island..jpg" width="100%">
         <h3>Rusinga Island Family Holiday Packages</h3>
         <p>5 Days, 4 Nights packages from <span style="font-size: 18px; color: #009933">Kshs. 15,500</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 70px" type="button">BOOK NOW</button>
     </div>
     <div class="column2" style="background-color:white;">
-        <img src="img/mombasa-beaches.jpg" style="width: 100%">
+        <img src="img/mombasa-beaches.jpg" style="width: 100%;">
         <h3>3 Days, 2 Nights Mombasa Beach Family Holiday Packages</h3>
         <p>Awesome family vacations from <span style="font-size: 18px; color: #009933">Kshs. 26,800</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933;" type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white; height: 415px;">
         <img src="img/ngare-ndare.jpg" style="width: 100%">
         <h3>Nanyuki Camping Packages</h3>
         <p>3 Days, 2 Nights Ngare Ndare Camping from <span style="color: #009933; font-size: 18px">Kshs. 16,000</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 55px" type="button">BOOK NOW</button>
     </div>
 </div>
 <br>
 <br>
 
-<div class="row2" id="row2">
+<div class="row2">
     <h2>Out of Kenya Packages</h2>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white; height: 399px">
         <img src="img/dubai.jpg" style="width: 100%">
         <h3>5 Days, 4 Nights Dubai Packages</h3>
         <p>Wide range of water-sports, indoor snow-skiing, world championship golf courses and exciting desert adventures from <span style="color: #009933; font-size: 18px;">Kshs. 64,500</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 45px" type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white;; height: 399px">
         <img src="img/zanzibar.jpg" width="100%">
         <h3>5 Days Zanzibar Holiday Package</h3>
         <p>Includes 4 nights' accommodation, return flights, airport transfers, full day safari Blue Island excursion, sunset cruise from <span style="color: #009933; font-size: 18px;">Kshs. 79,300</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 40px" type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
+    <div class="column2" style="background-color:white; height: 399px">
         <img src="img/amsterdam.jpg" style="width: 100%">
         <h3>11 Days, 10 Nights Europe Tour Package</h3>
         <p>Explore some of the best locations ins Europe: Rome, Amsterdam, Paris, Venice, Lugano. Rate per person sharing: <span style="font-size: 18px; color: #009933">Kshs. 290,000</span></p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <button style="background-color: #009933; margin-top: 32px" type="button">BOOK NOW</button>
     </div>
     <div class="column2" style="background-color:white;">
         <img src="img/honeymoon.jpg" style="width: 100%">
@@ -232,7 +241,7 @@
         <div class="container">
             <div class="row text-center">
 
-                <div class="form">
+                <div class="form" style="margin-left: 450px">
                     <h4>SIGN UP TO OUR NEWSLETTER</h4>
                     <form id="search-form" class="form-search form-horizontal">
                         <input type="text" class="input-search" placeholder="Email Address">
@@ -244,26 +253,9 @@
         </div>
     </div>
 
-    <div class="footer-top2">
-        <div class="container">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
-                <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
-                <a href="https://twitter.com"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
-                <a href="https://github.com"><i class="fa fa-github fa-2x"></i>Github</a>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
-                <a href="https://plus.google.com/discover"><i class="fa fa-google-plus fa-2x"></i>Google</a>
-            </div>
-        </div>
-    </div>
-
     <div class="container" style="border-top:1px solid grey;">
         <div class="row text-center">
-            <div class="col-lg-6 col-lg-offset-3">
+            <div  style="margin-left: 450px" class="col-lg-6 col-lg-offset-3">
                 <ul class="menu">
 
                     <li>

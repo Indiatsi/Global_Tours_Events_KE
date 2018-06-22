@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Tours and Events KE</title>
+    <link href="css/admin-header.css" rel="stylesheet" type="text/css">
+    <link href="css/admin-booked.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div id="search-container">
+        <form>
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</header>
+<br>
+<br>
+<section id="side-bar">
+    <div>
+        <table id="bookings">
+            <h2>BOOKINGS MADE</h2>
+            <tbody>
+            <tr>
+                <th>Package Name</th>
+                <th>Adults</th>
+                <th>Children</th>
+                <th>Date of travel</th>
+                <th>Special Requirements</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="btn">
+        <div id='top'></div>
+        <div id='middle'></div>
+        <div id='bottom'></div>
+    </div>
+    <div id="box">
+        <div id="items">
+            <a href="admin-home.html" class="item">Dashboard</a>
+            <a href="admin-packages.html" class="item">All Available Packages</a>
+            <a href="admin-booked.html" class="item">Booked Packages</a>
+            <a href="admin-addpackage.html" class="item">Add Packages</a>
+            <a href="php/logout.php" class="item">Log Out</a>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var sidebarBox = document.querySelector('#box'),
+        sidebarBtn = document.querySelector('#btn'),
+        pageWrapper = document.querySelector('#page-wrapper');
+
+    sidebarBtn.addEventListener('click', function (event) {
+        sidebarBtn.classList.toggle('active');
+        sidebarBox.classList.toggle('active');
+    });
+
+    pageWrapper.addEventListener('click', function (event) {
+
+        if (sidebarBox.classList.contains('active')) {
+            sidebarBtn.classList.remove('active');
+            sidebarBox.classList.remove('active');
+        }
+    });
+
+    window.addEventListener('keydown', function (event) {
+
+        if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+            sidebarBtn.classList.remove('active');
+            sidebarBox.classList.remove('active');
+        }
+    });
+</script>
+</body>
+</html>

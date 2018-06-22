@@ -50,6 +50,11 @@
     }
 }
 
+.search-container {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
 #page-title {
     color: white;
 }
@@ -62,89 +67,77 @@
     width: 98%;
 }
 
-/* Columns */
-* {
-    box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    margin-left: 22px;
-    float: left;
-    width: 30%;
-}
-
-.row {
-    background-color: whitesmoke;
-}
-
-#row {
-    margin-left: 310px;
-    width: 70%;
-}
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-/* Columns */
-* {
-    box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column2 {
-    margin: 10px;
-    float: left;
-    width: 22.5%;
-    padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row2 {
-    background-color: whitesmoke;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.search-form {
+.booking-form {
+    margin-left: 30px;
     margin-top: 20px;
-    background-color: white;
-    width: 20%;
-    height:20%;
-    margin-left: 20px;
-}
-
-.filter-search {
-    margin-top: 20px;
-    background-color: white;
-    width: 20%;
-    height: auto;
-    margin-left: 20px;
-}
-
-body {
+    width: 98%;
     background-color: #cccccc;
+}
+
+#book {
+    background-color: white;
+}
+
+.align {
+    display: inline-block;
+}
+
+.align input[type=text], select {
+    width: 300px;
+    height: 40px;
+    background-color: #DCDCDC;
+}
+
+
+#align-three {
+    margin-left: 100px;
+}
+
+#align-two {
+    margin-left: 100px;
+}
+
+.align-one {
+    display: inline-block;
+}
+
+#align-one {
+    margin-left: 50px;
+}
+
+#booking-form #content span {
+    display:block;
+    float:left;
+    width:100px;
+    padding-top:5px;
+    font: 14px/16px'Bree Serif', Georgia, serif;
+}
+
+#booking-form #content input.submit {
+    cursor: pointer;
+    width:150px;
+    height:30px;
+    margin: 10px;
+    background:#009933;;
+    /*font: 14px/16px'Bree Serif', Georgia, serif;*/
+}
+#booking-form #captcha span{
+    width: 44px;
+}
+#booking-form #captcha input{
+    background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+    margin: 5px 0 0;
+    padding: 0;
+    border: medium none;
+    cursor: pointer;
+    width: 15px;
+}
+
+#confirm {
+    text-align: center;
+    background-color: #009933;
+    width: 180px;
+    height: 30px;
 }
 
 .search-container {

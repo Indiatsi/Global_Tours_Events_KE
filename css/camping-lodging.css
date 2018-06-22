@@ -1,34 +1,41 @@
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #009933;
-    overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+/*Nav bar edits in css/navigation.css*/
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #f2f2f2;
-    color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #000000;
+.pageTitle{
+    background: #717171;
     color: white;
+    padding: 10px 0px;
+    margin-top: 1px;
+}
+
+
+/* Table */
+.column p span{
+    font-size: 15px;
+}
+
+.column button{
+    width: 100%;
+    color: white;
+    background: #009933;
+    font-size: 12px;
+}
+
+.column button:hover{
+    opacity: .7;
+}
+
+/*images*/
+.column img{
+   width: 100%;
+   height: 250px;
 }
 
 /* Search container */
 .topnav .search-container button:hover {
-    background: #cccccc;
+    background: #f2f2f2;
+    color: black
 }
 
 @media screen and (max-width: 600px) {
@@ -46,20 +53,13 @@
     }
 
     .topnav input[type=text] {
-        border: 1px solid #cccccc;
+        border: 1px solid #f2f2f2;
     }
 }
 
-#page-title {
-    color: white;
-}
-
-.title {
-    height: 50px;
-    background-color: #000080;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 98%;
+.search-container {
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 /* Columns */
@@ -69,19 +69,12 @@
 
 /* Create three equal columns that floats next to each other */
 .column {
-    margin-left: 22px;
+    margin: 10px;
     float: left;
     width: 30%;
+    padding: 10px;
 }
 
-.row {
-    background-color: whitesmoke;
-}
-
-#row {
-    margin-left: 310px;
-    width: 70%;
-}
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -116,10 +109,6 @@
     clear: both;
 }
 
-.row2 {
-    background-color: whitesmoke;
-}
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
@@ -127,32 +116,14 @@
     }
 }
 
-.search-form {
-    margin-top: 20px;
-    background-color: white;
-    width: 20%;
-    height:20%;
-    margin-left: 20px;
-}
-
-.filter-search {
-    margin-top: 20px;
-    background-color: white;
-    width: 20%;
-    height: auto;
-    margin-left: 20px;
-}
-
-body {
-    background-color: #cccccc;
-}
-
-.search-container {
-    margin-top: 50px;
-    margin-left: 100px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 .search-text{
+    margin-top:100px;
+    background-color: #272d33;
+    padding-top:60px;
     padding-bottom:60px;
 }
 
@@ -164,7 +135,7 @@ body {
 }
 
 .search-text .btn-search{
-    background: #545454;
+    background: #da3e44;
     font-family:Roboto;
     border:none;
     color:#FFF;
@@ -173,7 +144,7 @@ body {
 }
 
 .search-text h4{
-    color:#888582;
+    color: #FFF;
     font-weight: 700;
 }
 
@@ -275,7 +246,7 @@ footer ul li a:hover{
     padding: 10px;
 }
 
-.footer-top2 .col-lg-2:hover a {
+.footer-top2 .col-lg-2:hover a{
     color:#FFF;
     text-decoration:none;
     background:#7dabdb;
