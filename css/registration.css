@@ -3,7 +3,7 @@
 body{
     /*margin: 0; */
     padding: 0;
-    background: url("../oceanview.png");
+    background-image: url("img/oceanview.png");
     background-size: auto;
     background-position: center;
     font-family: sans-serif;

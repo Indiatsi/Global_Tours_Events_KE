@@ -13,58 +13,54 @@
 </head>
 <body>
 <header>
-    <div class="topnav">
-        <a class="active" href="home.html">HOME</a>
-        <a href="localSafaris.html">LOCAL SAFARIS</a>
-        <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
-        <a href="contactUs.html" id="contact">CONTACT US</a>
-        <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
-        <a href="login.html" id="login">LOGIN</a>
-    </div>
+    <!-- Navigation Bar-->
+    <ul class="dropdown">
+        <li><a href="home.html">HOME</a></li>
+        <li>
+            <a class="active" href="#">LOCAL SAFARIS</a>
+            <div class="dropdown-content">
+                <a href="camping-safaris.html">Camping Safaris</a>
+                <a href="lodging-safaris.html">Lodging Safaris</a>
+            </div>
+        </li>
+        <li>
+            <a href="#" id="international">INTERNATIONAL SAFARIS</a>
+            <div class="dropdown-content">
+                <a href="incredibleCruises.html">Incredible Cruises</a>
+                <a href="internationalSafaris.html">International Travels</a>
+            </div>
+        </li>
+        <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
+        <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+        <li><a href="login.html" id="login">LOGIN</a></li>
+    </ul>
 
-    <div class="search-container">
-        <form role="search" method="get" action="">
-            <input style="width: 500px; height: 50px" type="text" placeholder="Where do you want to go..." name="search">
-            <button style="font-size:20px; background-color: #009933; width: 100px; height: 50px" type="submit">Search</button>
-        </form>
-    </div>
-    <br>
-    <br>
-    <hr>
 </header>
 <br>
 <div class="title">
     <h3 id="page-title">Incredible Cruises</h3>
 </div>
 <section id="content">
-    <div class="search-form">
-        <label>YOUR DESTINATION</label>
-        <br>
-        <form>
-            <input type="text" placeholder="Enter a destination or tour name" style="background-color: #cccccc; color: black; width: 190px; height: 30px; font-size: 12px">
-            <button style="font-size:15px; margin-top: 10px; background-color: #009933; width: 150px; height: 30px" type="submit">SEARCH AGAIN</button>
-        </form>
-    </div>
 
     <div id="row" class="row" style="height: 450px">
         <div class="column" style="background-color:white; height: 440px">
-            <img src="img/barcelona.jpg" style="width: 95%;">
-            <h4>10 Days in Barcelona, Spain Package</h4>
-            <p> A city known for its new cuisine, which for twenty years has greatly influenced the culinary leaders of today.</p>
+            <img src="img/alaska.jpg" style="width: 95%;">
+            <h4>6 Days, 5 Nights Royal Caribean Cruise</h4>
+            <p>Key West and Grandy Cayman Cruise. Leaving from Miami, Florida, On the Empress of the Seas.</p>
             <hr>
             <button style="background-color: #009933" type="button">BOOK NOW</button>
         </div>
         <div class="column" style="background-color:white; height: 440px">
-            <img src="img/saudi-arabia.jpg" style="width: 95%; height: 250px;">
-            <h4>5 Days in Riyadh Package</h4>
-            <p>Attend the carnival of the camels in Riyadh, Saudi Arabia.</p>
+            <img src="img/princess-cruises.jpg" style="width: 95%; height: 250px;">
+            <h4>Princess Cruises-7 Days</h4>
+            <p>Inclusive of air transportation, shipboard accommodations and ocean transportation.</p>
             <hr>
             <button style="background-color: #009933;margin-top: 45px" type="button">BOOK NOW</button>
         </div>
         <div class="column" style="background-color:white; height: 440px;">
-            <img src="img/maldives.jpg" style="width: 95%; height: 250px;">
-            <h4>7 Days in Maldives Package</h4>
-            <p>Have an enjoyable week on the beaches of Maldives.</p>
+            <img src="img/celebrity-cruises.jpg" style="width: 95%; height: 250px;">
+            <h4>Celebrtity Cruises- 14 Nights, 15 Days</h4>
+            <p>Inclusive of air transportation, shipboard transportation, ocean transportation and most meals.</p>
             <hr>
             <button style="background-color: #009933; margin-top: 45px" type="button">BOOK NOW</button>
         </div>
@@ -73,31 +69,6 @@
     <br>
     <br>
 
-    <div id="row" class="row" style="height: 450px">
-        <div class="column" style="background-color:white; height: 440px;">
-            <img src="img/germany.jpg" style="width: 95%; height: 250px;">
-            <h4>10 Days in Cologne</h4>
-            <p>For the love of beer, enjoy the different types of beer in Germany</p>
-            <hr>
-            <button style="background-color: #009933; margin-top: 45px" type="button">BOOK NOW</button>
-        </div>
-        <div class="column" style="background-color:white; height: 440px">
-            <img src="img/jamaica.jpg" style="width: 95%; height: 250px;">
-            <h4>10 Days in Jamaica Package</h4>
-            <p>For the love of reggae. Experience Jamaican culture.</p>
-            <hr>
-            <button style="background-color: #009933;margin-top: 45px" type="button">BOOK NOW</button>
-        </div>
-        <div class="column" style="background-color:white; height: 440px;">
-            <img src="img/santorini.jpg" style="width: 95%; height: 250px;">
-            <h4>7 Days in Santorini Package</h4>
-            <p>Enjoy the colorful streets of Santorini, Greece.</p>
-            <hr>
-            <button style="background-color: #009933; margin-top: 65px" type="button">BOOK NOW</button>
-        </div>
-    </div>
-    <br>
-    <br>
 </section>
 <!-- Footer 2 -->
 <footer style="margin-left: 10px; margin-right: 10px;">

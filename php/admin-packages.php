@@ -13,7 +13,7 @@ session_start();
 $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
 
 if (!(array_key_exists("package_id",$_SESSION) AND isset($_SESSION['package_id']))) {
-    header("refresh: 0.5; url=../admin-packages.html");
+    header("refresh: 0.5; url=../admin-packages.php");
 }
 
 $query = "SELECT `package_name`,`package_price`, `package_locations` FROM `packages`;";

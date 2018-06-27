@@ -22,15 +22,15 @@
         <form method="post" action="php/admin-addpackage.php">
             <label>Name of the Package</label>
             <br>
-            <input type="text">
+            <input type="text" name="package_name" placeholder="Enter the package name">
             <br>
             <label>Price of the package</label>
             <br>
-            <input type="text">
+            <input type="text" name="package_price" placeholder="Enter the package price">
             <br>
             <label>Package Details</label>
             <br>
-            <input type="text">
+            <input type="text" name="package_locations" placeholder="Enter the package locations">
             <br>
             <br>
             <button>ADD PACKAGE</button>
@@ -45,8 +45,8 @@
     <div id="box">
         <div id="items">
             <a href="admin-home.html" class="item">Dashboard</a>
-            <a href="admin-packages.html" class="item">All Available Packages</a>
-            <a href="admin-booked.html" class="item">Booked Packages</a>
+            <a href="admin-packages.php" class="item">All Available Packages</a>
+            <a href="admin-booked.php" class="item">Booked Packages</a>
             <a href="admin-addpackage.html" class="item">Add Packages</a>
             <a href="#" class="item">Log Out</a>
     </div>

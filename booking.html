@@ -13,10 +13,12 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+
+<!-- Navigation Bar-->
 <ul class="dropdown">
-    <li><a href="home.html">HOME</a></li>
+    <li><a class="active" href="home.html">HOME</a></li>
     <li>
-        <a class="active" href="#">LOCAL SAFARIS</a>
+        <a href="#">LOCAL SAFARIS</a>
         <div class="dropdown-content">
             <a href="camping-safaris.html">Camping Safaris</a>
             <a href="lodging-safaris.html">Lodging Safaris</a>
@@ -33,13 +35,6 @@
     <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
     <li><a href="login.html" id="login">LOGIN</a></li>
 </ul>
-
-<div class="search-container">
-    <form role="search" method="get" action="">
-        <input style="width: 500px; height: 50px" type="text" placeholder="Where do you want to go..." name="search">
-        <button style="font-size:20px; background-color: #009933; width: 100px; height: 50px" type="submit">Search</button>
-    </form>
-</div>
 
 <div class="title">
     <h3 id="page-title">Tour Booking</h3>

@@ -9,7 +9,7 @@
 session_start();
 
 if (!(array_key_exists("",$_SESSION) AND isset($_SESSION['package_id']))) {
-    header("refresh: 0.5; url=../admin-packages.html");
+    header("refresh: 0.5; url=../admin-packages.php");
 }
 
 unset($_SESSION['username']);

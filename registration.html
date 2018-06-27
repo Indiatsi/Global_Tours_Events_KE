@@ -9,21 +9,33 @@ and open the template in the editor.
     <title>Global Tours and Events KE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<div class="topnav">
-    <a class="active" href="home.html">HOME</a>
-    <a href="localSafaris.html">LOCAL SAFARIS</a>
-    <a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a>
-    <a href="seasonalHolidays.html" id="seasonal">SEASONAL HOLIDAYS</a>
-    <a href="contactUs.html" id="contact">CONTACT US</a>
-    <a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a>
-    <a href="login.html" id="login">LOGIN</a>
-</div>
+<!-- Navigation Bar-->
+<ul class="dropdown">
+    <li><a href="home.html">HOME</a></li>
+    <li>
+        <a class="active" href="#">LOCAL SAFARIS</a>
+        <div class="dropdown-content">
+            <a href="camping-safaris.html">Camping Safaris</a>
+            <a href="lodging-safaris.html">Lodging Safaris</a>
+        </div>
+    </li>
+    <li>
+        <a href="#" id="international">INTERNATIONAL SAFARIS</a>
+        <div class="dropdown-content">
+            <a href="incredibleCruises.html">Incredible Cruises</a>
+            <a href="internationalSafaris.html">International Travels</a>
+        </div>
+    </li>
+    <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
+    <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+    <li><a href="login.html" id="login">LOGIN</a></li>
+</ul>
 
 <div class="registrationBox">
     <img class="avatar" src="avatar.png" alt="Avatar"/>

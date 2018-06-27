@@ -1,33 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 17/06/2018
- * Time: 10:32
- */
-
-session_start();
-
-
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
 $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
 
-if (isset($_POST))
-{
-    $package_name = $con->real_escape_string($_POST['package_name']);
-    $package_details = $con->real_escape_string($_POST['package_locations']);
-    $package_price = $con->real_escape_string($_POST['package_price']);
+// Escape user inputs for security
+$package_name = $con->real_escape_string($_POST['package_name']);
+$package_price = $con->real_escape_string($_POST['package_price']);
+$package_locations = $con->real_escape_string($_POST['package_locations']);
+
+// attempt insert query execution
+$sql = "INSERT INTO packages(package_name, package_id, package_price, package_locations) VALUES ('$package_name', 'NULL','$package_price','$package_locations')";
+if($con->query($sql) === true){
+    echo "Records inserted successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . $con->error;
 }
 
-//$package_name = $con->real_escape_string($_POST['package_name']);
-//$package_details = $con->real_escape_string($_POST['package_locations']);
-//$package_price = $con->real_escape_string($_POST['package_price']);
-
-$query = "INSERT INTO `packages` (`package_name`, `package_id`, `package_price`, `package_locations`) VALUES ('$package_name', NULL, '$package_price', '$package_details');";
-
-$result = $con->query($query) OR die($con->error);
-
-if($result){
-    echo "Successful update";
-}else{
-    echo "Error in update";
-}
+// Close connection
+$con->close();
+?>
