@@ -6,48 +6,40 @@
     <link href="css/admin-header.css" rel="stylesheet" type="text/css">
     <link href="css/admin-package.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body style="background-color: #343838">
 
 <?php
 $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
 ?>
-
-<header>
-    <div id="search-container">
-        <form>
-            <input type="text" placeholder="Search...">
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</header>
 <br>
 <br>
 <section id="side-bar">
     <div>
         <?php
-        if ($result = $con->query("SELECT * FROM packages")) {
-
-
+        $sql = "SELECT * FROM packages";
+        if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
 
                 echo " <table id='package-listings'>";
                 echo "<h2>PACKAGE LISTINGS</h2>";
                 echo "<thead>";
                 echo "<tr>";
-                echo "<th>Package Number</th>";
                 echo "<th>Package Name</th>";
                 echo "<th>Package Price</th>";
                 echo "<th>Package Locations</th>";
+                echo "<th>Edit</th>";
+                echo "<th>Delete</th>";
                 echo "</tr>";
                 echo "</thead>";
                 echo "<tbody>";
 
                 while ($row = $result->fetch_array()) {
                     echo "<tr>";
-                    echo "<td>" . $row['package_id'] . "</td>";
                     echo "<td>" . $row['package_name'] . "</td>";
                     echo "<td>" . $row['package_price'] . "</td>";
                     echo "<td>" . $row['package_locations'] . "</td>";
+                    echo "<td><a href='admin-edit.php'><img src='img/update.png'></a></td>";
+                    echo "<td><a href='admin-delete.php'><img src='img/remove.png'></a></td>";
                     echo "</tr>";
                 }
             }
@@ -56,9 +48,6 @@ $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
         }
 
         ?>
-
-
-
     </div>
 
     <div id="btn">
@@ -68,11 +57,16 @@ $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
     </div>
     <div id="box">
         <div id="items">
-            <a href="admin-home.html" class="item">Dashboard</a>
-            <a href="admin-packages.php" class="item">All Available Packages</a>
-            <a href="admin-booked.php" class="item">Booked Packages</a>
-            <a href="admin-addpackage.html" class="item">Add Packages</a>
-            <a href="#" class="item">Log Out</a>
+            <a href="admin-home.html" class="item"><img src="img/home.png">Dashboard</a>
+            <br>
+            <a href="admin-packages.php" class="item"><img src="img/view.png">All Packages</a>
+            <br>
+            <a href="admin-booked.php" class="item"><img src="img/booked.png">Booked Packages</a>
+            <br>
+            <a href="admin-addpackage.html" class="item"><img src="img/add.png">Add Packages</a>
+            <br>
+            <a href="#" class="item"><img src="img/logout.png">Log Out</a>
+            <br>
         </div>
     </div>
 </section>

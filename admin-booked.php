@@ -6,18 +6,12 @@
     <link href="css/admin-header.css" rel="stylesheet" type="text/css">
     <link href="css/admin-booked.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body style="background-color: #343838">
 <?php
  $con = new mysqli("localhost", "root", "", "global_tours_and_events_ke");
 ?>
 
 <header>
-    <div id="search-container">
-        <form>
-            <input type="text" placeholder="Search...">
-            <input type="submit" value="Submit">
-        </form>
-    </div>
 </header>
 <br>
 <br>
