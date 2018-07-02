@@ -10,6 +10,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/registration.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-bar.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -19,7 +20,7 @@ and open the template in the editor.
 <ul class="dropdown">
     <li><a href="home.html">HOME</a></li>
     <li>
-        <a class="active" href="#">LOCAL SAFARIS</a>
+        <a href="#">LOCAL SAFARIS</a>
         <div class="dropdown-content">
             <a href="camping-safaris.html">Camping Safaris</a>
             <a href="lodging-safaris.html">Lodging Safaris</a>
@@ -33,7 +34,7 @@ and open the template in the editor.
         </div>
     </li>
     <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
-    <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+    <li><a class="active" href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
     <li><a href="login.html" id="login">LOGIN</a></li>
 </ul>
 
@@ -102,7 +103,7 @@ and open the template in the editor.
                 <ul class="menu">
                     <span>Menu</span>
                     <li>
-                        <a href="home.html">Home</a>
+                        <a href="#">Home</a>
                     </li>
 
                     <li>

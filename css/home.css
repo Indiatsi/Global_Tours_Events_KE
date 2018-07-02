@@ -71,6 +71,19 @@
     float: left;
     width: 30%;
     padding: 10px;
+    height: 540px;
+    background-color:white;
+}
+
+.column button {
+    width: 96%;
+    height: 25px;
+    background-color: #009933;
+    margin-top: 10px;
+}
+
+.row #row-rift-valley button {
+    margin-top: 4px;
 }
 
 .row {
@@ -81,10 +94,22 @@
     font-size: 12px;
 }
 
+.row h2 {
+    margin-left: 10px;
+}
+
+.column span {
+    color: #009933;
+    font-size: 20px;
+}
+
 #row {
     margin-left: 50px;
+    margin-right: 30px;
     width: 90%;
+    height: 620px;
 }
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -106,10 +131,12 @@
 
 /* Create four equal columns that floats next to each other */
 .column2 {
-    margin: 10px;
+    margin-left: 30px;
     float: left;
-    width: 22.5%;
+    width: 30%;
     padding: 10px;
+    height: 450px;
+    background-color:white;
 }
 
 /* Clear floats after the columns */
@@ -117,6 +144,10 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.row2 h2 {
+    margin-left: 10px;
 }
 
 .row2 {
@@ -127,14 +158,115 @@
     font-size: 12px;
 }
 
+.row2 hr {
+    margin-top: 30px;
+}
+
 .row2 {
     margin-left: 50px;
+    margin-right: 30px;
     width: 90%;
+    height: 550px;
+}
+
+.row2 #row2-ngare-ndare button {
+    margin-top: 18px;
+}
+
+.row2 #row2-ngare-ndare hr {
+    margin-top: 20px;
+}
+
+.column2 span {
+    color: #009933;
+    font-size: 18px;
+}
+
+.column2 button {
+    width: 96%;
+    height: 30px;
+    background-color: #009933;
+    margin-top: 20px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .column2 {
+        width: 100%;
+    }
+}
+
+/* Columns */
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column3 {
+    margin-left: 30px;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 500px;
+    background-color:white;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row3 h2 {
+    margin-left: 10px;
+}
+
+.row3 {
+    background-color: whitesmoke;
+}
+
+.row3 p {
+    font-size: 12px;
+}
+
+.row3 hr {
+    margin-top: 20px;
+}
+
+.row3 {
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 90%;
+    height: 630px;
+}
+
+.column3 span {
+    color: #009933;
+    font-size: 18px;
+}
+
+#row3-zanzibar hr {
+    margin-top: 60px;
+}
+
+#row3-zanzibar button {
+    margin-top: 4px;
+}
+
+#row3-honeymoon hr {
+    margin-top: 40px;
+}
+
+.column3 button {
+    width: 96%;
+    height: 30px;
+    background-color: #009933;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column3 {
         width: 100%;
     }
 }
@@ -150,6 +282,7 @@
     max-height: 60%;
     position: relative;
     margin: auto;
+    margin-top: 20px;
     background-color: #f2f2f2;
 }
 
@@ -261,6 +394,11 @@
 .search-text h4{
     color:#888582;
     font-weight: 700;
+}
+
+.footer {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 footer{

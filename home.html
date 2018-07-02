@@ -16,22 +16,26 @@
 <body>
 <header>
     <!-- Navigation Bar-->
-    <div>
-        <ul class="dropdown">
-            <li><a class="active" href="home.html">HOME</a></li>
-            <li>
-                <a href="#">LOCAL SAFARIS</a>
-                <div class="dropdown-content">
-                    <a href="camping-safaris.html">Camping Safaris</a>
-                    <a href="lodging-safaris.html">Lodging Safaris</a>
-                </div>
-            </li>
-            <li><a href="internationalSafaris.html" id="international">INTERNATIONAL SAFARIS</a></li>
-            <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
-            <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
-            <li><a href="login.html" id="login">LOGIN</a></li>
-        </ul>
-    </div>
+    <ul class="dropdown">
+        <li><a class="active" href="home.html">HOME</a></li>
+        <li>
+            <a href="#">LOCAL SAFARIS</a>
+            <div class="dropdown-content">
+                <a href="camping-safaris.html">Camping Safaris</a>
+                <a href="lodging-safaris.html">Lodging Safaris</a>
+            </div>
+        </li>
+        <li>
+            <a href="#" id="international">INTERNATIONAL SAFARIS</a>
+            <div class="dropdown-content">
+                <a href="incredibleCruises.html">Incredible Cruises</a>
+                <a href="internationalSafaris.html">International Travels</a>
+            </div>
+        </li>
+        <li><a href="contactUs.html" id="contact">CONTACT US</a></li>
+        <li><a href="registration.html" id="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN UP</a></li>
+        <li><a href="login.html" id="login">LOGIN</a></li>
+    </ul>
 </header>
 
 <div class="slideshow-container">
@@ -122,100 +126,96 @@
 
 <br>
 
-<div id="row" class="row" style="height: 600px">
-    <h3 style="margin-left: 10px">Top Holiday Packages</h3>
-    <div class="column" style="background-color:white; height: 530px">
+<div id="row" class="row">
+    <h2>Top Holiday Packages</h2>
+    <div class="column" id="row-rift-valley">
         <img src="img/riftvalley.jpg" style="width: 95%">
         <h3>Rift Valley Deals</h3>
-        <p>Sirville Elementaita at <span style="color: #009933; font-size: 20px;">Kshs. 6,000</span></p>
+        <p>Sirville Elementaita at <span>Kshs. 6,000</span></p>
         <hr>
-        <p>Lake Naivasha Sopa Lodge at <span style="color: #009933; font-size: 20px;">Kshs. 9,900</span></p>
+        <p>Lake Naivasha Sopa Lodge at <span>Kshs. 9,900</span></p>
         <hr>
-        <p>Enashipai Resort Spa and Lodge at <span style="color: #009933; font-size: 20px;">Kshs. 13,250</span></p>
+        <p>Enashipai Resort Spa and Lodge at <span>Kshs. 13,250</span></p>
         <hr>
-        <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
+        <button type="button">SEE ALL PACKAGES</button>
     </div>
-    <div class="column" id="column-sgr" style="background-color:white;">
+    <div class="column" id="column-sgr">
         <img src="img/sgr.jpg" width="100%">
         <h3>Mombasa SGR Train Deals</h3>
-        <p>Plaza Beach Hotel - 3 days at <span style="color: #009933; font-size: 20px;">Kshs. 13,000</span></p>
+        <p>Plaza Beach Hotel - 3 days at <span>Kshs. 13,000</span></p>
         <hr>
-        <p>Neptune Bamburi - 5 days at <span style="color: #009933; font-size: 20px;">Kshs. 30,600</span></p>
+        <p>Neptune Bamburi - 5 days at <span>Kshs. 30,600</span></p>
         <hr>
-        <p>Amani Tiwi - 3 days at <span style="color: #009933; font-size: 20px;">Kshs. 19,800</span></p>
+        <p>Amani Tiwi - 3 days at <span>Kshs. 19,800</span></p>
         <hr>
-        <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
+        <button type="button">SEE ALL PACKAGES</button>
     </div>
-    <div class="column" style="background-color:white;">
+    <div class="column">
         <img src="img/holiday.jpg" style="width: 100%">
         <h3>Early Holiday Deals</h3>
-        <p style="font-size: 12px">3 Days Masai Mara Budget Package at <span style="color: #009933; font-size: 20px;">Kshs. 14,500</span></p>
+        <p>3 Days Masai Mara Budget Package at <span>Kshs. 14,500</span></p>
         <hr>
-        <p style="font-size: 12px">4 Days Neptune Beach Bamburi at <span style="color: #009933; font-size: 20px;">Kshs. 20,200</span></p>
+        <p>4 Days Neptune Beach Bamburi at <span>Kshs. 20,200</span></p>
         <hr>
-        <p style="font-size: 12px">4 Days Voi Wildlife & Bamburi Beach at <span style="color: #009933; font-size: 20px;">Kshs. 28,600</span></p>
+        <p>4 Days Voi Wildlife & Bamburi Beach at <span>Kshs. 28,600</span></p>
         <hr>
-        <button style="background-color: #009933" type="button">SEE ALL PACKAGES</button>
+        <button type="button">SEE ALL PACKAGES</button>
     </div>
 </div>
 <br>
 <br>
 
 <div class="row2">
-    <h2 style="margin-left: 10px;">Featured Packages</h2>
-    <div class="column2" style="background-color:white; height: 415px;">
+    <br>
+    <h2>Featured Packages</h2>
+    <div class="column2">
         <img src="img/wildebeest.jpeg" style="width: 100%">
         <h3>Masai Mara Widebeest Migration Safari Packages</h3>
-        <p>Wildebeest migration adventure in Masai Mara, Kenya. 3 Days from <span style="color: #009933; font-size: 18px;">Kshs. 14,500</span></p>
-        <button style="background-color: #009933; margin-top: 55px" type="button">BOOK NOW</button>
+        <p>Wildebeest migration adventure 3 Days from <span>Kshs. 14,500</span></p>
+        <hr>
+        <button type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white; height: 415px">
+    <div class="column2" id="row2-rusinga">
         <img src="img/rusinga-island..jpg" width="100%">
         <h3>Rusinga Island Family Holiday Packages</h3>
-        <p>5 Days, 4 Nights packages from <span style="font-size: 18px; color: #009933">Kshs. 15,500</span></p>
-        <button style="background-color: #009933; margin-top: 70px" type="button">BOOK NOW</button>
+        <p>5 Days, 4 Nights packages from <span>Kshs. 15,500</span></p>
+        <hr>
+        <button type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
-        <img src="img/mombasa-beaches.jpg" style="width: 100%;">
-        <h3>3 Days, 2 Nights Mombasa Beach Family Holiday Packages</h3>
-        <p>Awesome family vacations from <span style="font-size: 18px; color: #009933">Kshs. 26,800</span></p>
-        <button style="background-color: #009933;" type="button">BOOK NOW</button>
-    </div>
-    <div class="column2" style="background-color:white; height: 415px;">
+    <div class="column2" id="row2-ngare-ndare">
         <img src="img/ngare-ndare.jpg" style="width: 100%">
         <h3>Nanyuki Camping Packages</h3>
-        <p>3 Days, 2 Nights Ngare Ndare Camping from <span style="color: #009933; font-size: 18px">Kshs. 16,000</span></p>
-        <button style="background-color: #009933; margin-top: 55px" type="button">BOOK NOW</button>
+        <p>3 Days, 2 Nights Ngare Ndare Camping from <span>Kshs. 16,000</span></p>
+        <hr>
+        <button type="button">BOOK NOW</button>
     </div>
 </div>
 <br>
 <br>
 
-<div class="row2">
+<div class="row3">
+    <br>
     <h2>Out of Kenya Packages</h2>
-    <div class="column2" style="background-color:white; height: 399px">
-        <img src="img/dubai.jpg" style="width: 100%">
-        <h3>5 Days, 4 Nights Dubai Packages</h3>
-        <p>Wide range of water-sports, indoor snow-skiing, world championship golf courses and exciting desert adventures from <span style="color: #009933; font-size: 18px;">Kshs. 64,500</span></p>
-        <button style="background-color: #009933; margin-top: 45px" type="button">BOOK NOW</button>
-    </div>
-    <div class="column2" style="background-color:white;; height: 399px">
+    <div class="column3" id="row3-zanzibar">
         <img src="img/zanzibar.jpg" width="100%">
         <h3>5 Days Zanzibar Holiday Package</h3>
-        <p>Includes 4 nights' accommodation, return flights, airport transfers, full day safari Blue Island excursion, sunset cruise from <span style="color: #009933; font-size: 18px;">Kshs. 79,300</span></p>
-        <button style="background-color: #009933; margin-top: 40px" type="button">BOOK NOW</button>
+        <p>Includes 4 nights' accommodation, return flights, airport transfers, full day safari Blue Island excursion, sunset cruise from <span>Kshs. 79,300</span></p>
+        <hr>
+        <button type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white; height: 399px">
+    <div class="column3">
         <img src="img/amsterdam.jpg" style="width: 100%">
         <h3>11 Days, 10 Nights Europe Tour Package</h3>
-        <p>Explore some of the best locations ins Europe: Rome, Amsterdam, Paris, Venice, Lugano. Rate per person sharing: <span style="font-size: 18px; color: #009933">Kshs. 290,000</span></p>
-        <button style="background-color: #009933; margin-top: 32px" type="button">BOOK NOW</button>
+        <p>Explore some of the best locations ins Europe: Rome, Amsterdam, Paris, Venice, Lugano. Rate per person sharing: <span>Kshs. 290,000</span></p>
+        <hr>
+        <button type="button">BOOK NOW</button>
     </div>
-    <div class="column2" style="background-color:white;">
+    <div class="column3" id="row3-honeymoon">
         <img src="img/honeymoon.jpg" style="width: 100%">
         <h3>11 Days Kenya Bush and Beach Honeymoon Package</h3>
-        <p>Destinations: Samburu, Mt. Kenya Safari and Mombasa. From <span style="font-size: 18px; color: #009933">Kshs. 163,500</span> per person sharing</p>
-        <button style="background-color: #009933" type="button">BOOK NOW</button>
+        <p>Destinations: Samburu, Mt. Kenya Safari and Mombasa. From <span>Kshs. 163,500</span> per person sharing</p>
+        <hr>
+        <button  type="button">BOOK NOW</button>
     </div>
 </div>
 
@@ -225,7 +225,7 @@
 <hr>
 
 <!-- Footer 2 -->
-<footer style="margin-left: 10px; margin-right: 10px;">
+<footer class="footer">
 
     <div class="search-text">
         <div class="container">

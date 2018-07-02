@@ -1,22 +1,25 @@
 /* Add a black background color to the top navigation */
 
 /*Nav bar edits in css/navigation.css*/
-
 .pageTitle{
     background: #717171;
     color: white;
     padding: 10px 0px;
-    margin-top: 1px;
+    margin-top: 20px;
+    width: 96%;
+    margin-left: 20px;
 }
 
 
 /* Table */
 .column p span{
-    font-size: 15px;
+    font-size: 18px;
+    color: #009933;
 }
 
 .column button{
     width: 100%;
+    height: 30px;
     color: white;
     background: #009933;
     font-size: 12px;
@@ -69,10 +72,11 @@
 
 /* Create three equal columns that floats next to each other */
 .column {
-    margin: 10px;
+    margin: 20px;
     float: left;
     width: 30%;
     padding: 10px;
+    background-color: white;
 }
 
 /* Clear floats after the columns */
@@ -80,6 +84,14 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.row {
+    background-color: whitesmoke;
+    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 530px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -121,7 +133,7 @@ body{
 }
 
 .search-text{
-    margin-top:100px;
+    margin-top:1000px;
     background-color: #272d33;
     padding-top:60px;
     padding-bottom:60px;
@@ -149,106 +161,49 @@ body{
 }
 
 footer{
-    background-color:#222222;
-    padding: 60px 0px;
+    background-color: #33383c;
+    padding:30px 0px;
 }
 
-footer ul{
-    list-style:none;
-    margin:0 auto;
-    display:inline-block;
-    padding-top:50px;
-}
-
-footer ul li{
-    float:left;
-}
-
-footer ul li a{
-    color:#b1aca1;
-    padding:20px;
-}
-
-footer ul li a:hover{
-    color:#7dabdb;
-    text-decoration:none;
-}
-
-.footer-top{
-    padding-bottom:50px;
-}
-
-.footer-top .fa{
-    font-size:18px;
-    color: #FFF;
-    padding-right:10px;
-}
-
-.footer-top a{
+.logo{
     color:#FFF;
-    background:#333333;
-    padding: 10px;
+    font-weight:700;
+    font-size:30px;
 }
 
-.footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
-    color:#7dabdb;
-    text-decoration:none;
-}
-
-.copyright{
-    background-color:#f0f0f0;
-}
-
-.copyright p{
-    font-size:12px;
-    padding:15px 0 10px 0;
-}
-
-#top{
-    color: #fff;
-    background: #7dabdb;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 40px;
-    height: 40px;
-    width: 40px;
-    right: 30px;
-    position: fixed;
-    border-radius: 3px;
-    text-align: center;
-    bottom: 350px;
-}
-
-.footer-top2 a{
+.address span , .menu span{
+    color: #FFF;
+    font-weight: bold;
+    border-bottom: 1px solid #c7c7c7;
+    padding:10px 0px;
     display: block;
-    color: #FFF;
-    background: #333333;
-    border-radius: 72px;
-    height: 100px;
-    width: 100px;
-    padding: 43px 0px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
 }
 
-
-.footer-top2{
-    padding-bottom:50px;
-}
-
-.footer-top2 .fa{
-    font-size:18px;
-    color: #FFF;
-    padding-right:10px;
-}
-
-.footer-top a{
+.address li a , .menu li a{
     color:#FFF;
-    background:#333333;
-    padding: 10px;
-}
-
-.footer-top2 .col-lg-2:hover a{
-    color:#FFF;
+    letter-spacing: 3px;
     text-decoration:none;
-    background:#7dabdb;
-    transition: all 2s ease-in-out;
+    font-size:14px;
+}
+
+.address li, .menu li{
+    margin:20px 0px;
+    list-style: none;
+}
+
+.address li a:hover , .menu li a:hover{
+    color: #da3e44;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.address .fa{
+    color: #da3e44;
+    margin-right: 10px;
+    font-size:18px;
 }

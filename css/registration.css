@@ -3,9 +3,9 @@
 body{
     /*margin: 0; */
     padding: 0;
-    background-image: url("img/oceanview.png");
     background-size: auto;
     background-position: center;
+    background-image: url("ocean-view.png");
     font-family: sans-serif;
     /*padding-top: 200px;*/
 }
@@ -65,7 +65,7 @@ body{
 /*The div where the logon form is*/
 .registrationBox{
     width: 500px;
-    margin-top: 10em;
+    margin-top: 150px;
     height: 92%;
     background-color:#F8F8F8;
 
@@ -164,7 +164,7 @@ body{
 }
 
 .search-text{
-    margin-top:1000px;
+    margin-top:900px;
     background-color: #272d33;
     padding-top:60px;
     padding-bottom:60px;
@@ -238,5 +238,4 @@ footer{
     margin-right: 10px;
     font-size:18px;
 }
-
 

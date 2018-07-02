@@ -58,7 +58,7 @@
     height: 50px;
     background-color: #000080;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
     width: 98%;
 }
 
@@ -72,17 +72,85 @@
     margin-left: 22px;
     float: left;
     width: 30%;
+    height: 600px;
+    background-color: white;
 }
 
 .row {
     background-color: whitesmoke;
 }
 
-#row {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 98%;
+.column button {
+    margin-left: 3px;
 }
+
+.column img {
+    height: 400px;
+    width: 95%;
+    margin-left: 10px;
+}
+
+#row {
+    height: 620px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#row2 {
+    height: 620px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#row3 {
+    height: 620px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 90%;
+
+}
+
+#row-riyadh hr {
+    margin-top: 65px;
+}
+
+#row-maldives hr {
+    margin-top: 65px;
+}
+
+#row2-jamaica hr {
+    margin-top: 60px;
+}
+
+#row2-santorini hr {
+    margin-top: 60px;
+}
+
+#row2-cologne hr {
+    margin-top: 40px;
+}
+
+#row3-mumbai hr {
+    margin-top: 45px;
+}
+
+#row3-paris hr {
+    margin-top: 65px;
+}
+
+#row3-rome hr {
+    margin-top: 63px;
+}
+
+.column button {
+    height: 30px;
+    width: 98%;
+    background-color: #009933;
+    color: white;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
